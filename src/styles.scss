@@ -1,3 +1,5 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 @font-face {
   font-family: "Font";
   src: url("../public/JetBrainsMonoNerdFont.ttf");
@@ -38,6 +40,10 @@
   --color-background: var(--sp-c-black);
 
   --color-text: var(--sp-c-white);
+
+  --color-link: var(--sp-c-green);
+  --color-link-visited: var(--sp-c-green);
+  --color-link-hover: var(--sp-c-green-1);
 }
 
 body {

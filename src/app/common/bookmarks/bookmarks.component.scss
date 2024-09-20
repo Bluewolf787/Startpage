@@ -1,0 +1,46 @@
+.bookmark-list {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 4rem;
+  grid-column-gap: 4rem;
+  max-width: 64rem;
+  grid-auto-rows: max-content;
+}
+
+.bookmark-category {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  li {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    padding: 2px;
+    list-style-type: none;
+  }
+
+  a {
+    transition: 0.25s color;
+
+    &:link {
+      text-decoration: none;
+      color: var(--color-link);
+    }
+
+    &:visited {
+      color: var(--color-link-visited);
+    }
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+  }
+}

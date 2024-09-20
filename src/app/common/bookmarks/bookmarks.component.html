@@ -1,0 +1,15 @@
+<div class="bookmark-list">
+  @for (bookmarkCategory of bookmarkCategories; track bookmarkCategory.name) {
+  <div class="bookmark-category">
+    <p>~/{{ bookmarkCategory.name }}</p>
+    @for (bookmark of bookmarkCategory.bookmarks; track bookmark.name) {
+    <li>
+      <a [href]="bookmark.link">
+        <i [class]="bookmark.icon"></i>
+        {{ bookmark.name }}
+      </a>
+    </li>
+    }
+  </div>
+  }
+</div>

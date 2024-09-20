@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { BookmarksComponent } from '../../common/bookmarks/bookmarks.component';
 
 @Component({
   selector: 'app-startpage',
   standalone: true,
-  imports: [],
+  imports: [BookmarksComponent],
   templateUrl: './startpage.component.html',
   styleUrl: './startpage.component.scss',
 })
