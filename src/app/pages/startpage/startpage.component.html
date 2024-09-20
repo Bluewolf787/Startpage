@@ -1,0 +1,40 @@
+<div class="text-center mt-5">
+  <pre>
+ █████╗ ██████╗  ██████╗██╗  ██╗    ██╗     ██╗███╗   ██╗██╗   ██╗██╗  ██╗
+██╔══██╗██╔══██╗██╔════╝██║  ██║    ██║     ██║████╗  ██║██║   ██║╚██╗██╔╝
+███████║██████╔╝██║     ███████║    ██║     ██║██╔██╗ ██║██║   ██║ ╚███╔╝ 
+██╔══██║██╔══██╗██║     ██╔══██║    ██║     ██║██║╚██╗██║██║   ██║ ██╔██╗ 
+██║  ██║██║  ██║╚██████╗██║  ██║    ███████╗██║██║ ╚████║╚██████╔╝██╔╝ ██╗
+╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝    ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝
+  </pre>
+
+  <div class="time">
+    <div class="mb-4 fw-bolder fs-5">
+      {{ showTime() }}
+    </div>
+  </div>
+
+  <div>
+    <form
+      id="search-form"
+      action="https://www.startpage.com/do/search"
+      method="GET"
+    >
+      <input
+        class="bg-color-white color-black"
+        id="search"
+        type="text"
+        name="query"
+        placeholder="Search with Startpage"
+      />
+    </form>
+  </div>
+
+  <div>
+    {{ cite }}
+  </div>
+
+  <div class="mt-5 d-flex justify-content-center">
+    <app-bookmarks></app-bookmarks>
+  </div>
+</div>

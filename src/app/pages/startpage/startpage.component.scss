@@ -1,0 +1,19 @@
+#search {
+  margin: 0.5rem 0 1.5rem;
+  height: 2.5rem;
+  width: 50rem;
+  border: none;
+  border-radius: 12px;
+  padding: 2px 20px;
+
+  font-family: Font, serif;
+  font-weight: 500;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+}
