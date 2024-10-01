@@ -1,3 +1,15 @@
+#header-desktop {
+  display: block;
+}
+
+#header-mobile {
+  display: none;
+}
+
+#time {
+  margin: 0 1rem 0 1rem;
+}
+
 #search {
   margin: 0.5rem 0 1.5rem;
   height: 2.5rem;
@@ -15,5 +27,25 @@
 
   &::-webkit-search-cancel-button {
     -webkit-appearance: none;
+  }
+}
+
+#cite {
+  margin: 0 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 940px) {
+  #search {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #header-desktop {
+    display: none;
+  }
+
+  #header-mobile {
+    display: block;
   }
 }
