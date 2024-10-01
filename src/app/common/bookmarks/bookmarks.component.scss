@@ -44,3 +44,25 @@
     }
   }
 }
+
+@media only screen and (min-width: 680px) and (max-width: 890px) {
+  .bookmark-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 680px) {
+  .bookmark-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .bookmark-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bookmark-category {
+    align-items: center;
+  }
+}
