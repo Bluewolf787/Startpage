@@ -10,18 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Install Tools
+        uses: asdf-vm/actions/install@v3
+
+      - name: Authenticate with GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_PAT }}" > .npmrc
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
-        with:
-          node-version: "22.8.0"
 
-      - name: Install dependencies
-        run: npm install
+      - name: Run Clean Install
+        run: npm ci
 
-      - name: Build Angular app
+      - name: Build Angular App
         run: npm run build:prod
 
       - name: Deploy to GitHub Pages
