@@ -7,10 +7,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "rm -rf dist && npm run lint && ng build",
     "build:prod": "ng build -c production --base-href \"./\"",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "eslint -c eslint.config.mjs src",
+    "lint:fix": "eslint -c eslint.config.mjs src --fix"
   },
   "private": true,
   "dependencies": {
