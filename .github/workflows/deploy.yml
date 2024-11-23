@@ -22,8 +22,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
 
-      - name: Run Clean Install
+      - name: NPM Clean Install
         run: npm ci
+
+      - name: Lint
+        run: npm run lint
 
       - name: Build Angular App
         run: npm run build:prod
