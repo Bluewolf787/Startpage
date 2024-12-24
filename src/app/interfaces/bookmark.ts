@@ -1,5 +1,3 @@
-import { KeyValue } from '@angular/common';
-
 /**
  * ```ts
  * name: string
