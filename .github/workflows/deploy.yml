@@ -19,7 +19,7 @@ jobs:
           asdf_branch: v0.15.0
 
       - name: Authenticate with GitHub Packages
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_PAT }}" > .npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_PAT }}" >> .npmrc
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
