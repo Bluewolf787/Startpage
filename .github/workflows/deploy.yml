@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: echo "linting deactivated"
+        run: npm run lint
 
       - name: Build Angular App
         run: npm run build:prod
