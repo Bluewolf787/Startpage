@@ -13,7 +13,7 @@ export const bookmarks = [
       {
         name: 'Drive',
         link: 'https://drive.google.com',
-        icon: 'nf nf-dev-google_drive',
+        icon: 'nf nf-md-google_drive',
       },
       {
         name: 'Drawio',
