@@ -135,6 +135,11 @@ export const bookmarks = [
         link: 'https://bugs.mojang.com/projects/MC/issues',
         icon: 'nf nf-cod-bug',
       },
+      {
+        name: 'areweanticheatyet',
+        link: 'https://areweanticheatyet.com/',
+        icon: 'nf nf-md-monitor_eye',
+      },
     ] as Bookmark[],
   },
   {
