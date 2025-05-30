@@ -1,5 +1,5 @@
-import { Bookmark } from '../interfaces/bookmark';
-import { BookmarkCategory } from '../interfaces/bookmark-category';
+import { Bookmark } from '../interfaces/bookmark'
+import { BookmarkCategory } from '../interfaces/bookmark-category'
 
 export const bookmarks = [
   {
@@ -13,7 +13,7 @@ export const bookmarks = [
       {
         name: 'Drive',
         link: 'https://drive.google.com',
-        icon: 'nf nf-dev-google_drive',
+        icon: 'nf nf-md-google_drive',
       },
       {
         name: 'Drawio',
@@ -135,6 +135,11 @@ export const bookmarks = [
         link: 'https://bugs.mojang.com/projects/MC/issues',
         icon: 'nf nf-cod-bug',
       },
+      {
+        name: 'areweanticheatyet',
+        link: 'https://areweanticheatyet.com/',
+        icon: 'nf nf-md-monitor_eye',
+      },
     ] as Bookmark[],
   },
   {
@@ -182,4 +187,4 @@ export const bookmarks = [
       },
     ] as Bookmark[],
   },
-] as BookmarkCategory[];
+] as BookmarkCategory[]
