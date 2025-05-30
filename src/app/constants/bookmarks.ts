@@ -1,5 +1,5 @@
-import { Bookmark } from '../interfaces/bookmark';
-import { BookmarkCategory } from '../interfaces/bookmark-category';
+import { Bookmark } from '../interfaces/bookmark'
+import { BookmarkCategory } from '../interfaces/bookmark-category'
 
 export const bookmarks = [
   {
@@ -182,4 +182,4 @@ export const bookmarks = [
       },
     ] as Bookmark[],
   },
-] as BookmarkCategory[];
+] as BookmarkCategory[]
