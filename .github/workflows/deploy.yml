@@ -13,11 +13,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Install Tools
-        uses: asdf-vm/actions/install@v3
-        with:
-          asdf_branch: v0.15.0
-
       - name: Authenticate with GitHub Packages
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_PAT }}" >> .npmrc
 
