@@ -5,8 +5,28 @@ allowBuilds:
   msgpackr-extract: false
 
 minimumReleaseAge: 10080
+
 minimumReleaseAgeExclude:
   - "@bluewolf787/*"
+  - "@angular/animations@21.2.19"
+  - "@angular/common@21.2.19"
+  - "@angular/compiler-cli@21.2.19"
+  - "@angular/compiler@21.2.19"
+  - "@angular/core@21.2.19"
+  - "@angular/forms@21.2.19"
+  - "@angular/platform-browser-dynamic@21.2.19"
+  - "@angular/platform-browser@21.2.19"
+  - "@angular/router@21.2.19"
+
+overrides:
+  glob: 13.0.6
+  inflight: 1.0.6
+  rimraf: 6.1.3
+  fast-uri: 3.1.4
+  postcss: 8.5.23
+  brace-expansion: 5.0.8
+  "@hono/node-server": 2.0.12
+  tar: 7.5.22
 
 registries:
   "@bluewolf787": https://npm.pkg.github.com
