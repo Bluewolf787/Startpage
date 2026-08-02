@@ -2,19 +2,19 @@
   "name": "startpage",
   "version": "1.2.4",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=22",
+    "pnpm": ">=11"
   },
+  "private": true,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "rm -rf dist && npm run lint && ng build",
+    "build": "rm -rf dist && pnpm lint && ng build",
     "build:prod": "ng build -c production --base-href \"./\"",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
     "lint": "eslint -c eslint.config.mjs src",
     "lint:fix": "eslint -c eslint.config.mjs src --fix"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^20.3.16",
     "@angular/common": "^20.3.16",
