@@ -28,10 +28,13 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-          registry-url: "https://npm.pkg.github.com"
           cache: pnpm
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@bluewolf787"
       - name: Install dependencies
         run: pnpm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Lint
         run: pnpm run lint
       - name: Build Angular App
