@@ -1,0 +1,12 @@
+allowBuilds:
+  "@parcel/watcher": false
+  esbuild: true
+  lmdb: false
+  msgpackr-extract: false
+
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - "@bluewolf787/*"
+
+registries:
+  "@bluewolf787": https://npm.pkg.github.com
