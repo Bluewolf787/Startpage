@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: dist/*/browser
+          path: dist/startpage/browser
 
   deploy:
     needs: build
